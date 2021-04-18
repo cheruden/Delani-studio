@@ -2,13 +2,275 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delani Studio</title>
-    <link rel="stylesheet" href="css/css/bootstrap.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Delani Studio - Dennis K. Cheruiyot</title>
+    <link rel="stylesheet" href="css/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/js/jquery-3.2.1.slim.min.js" type="text/javascript"></script>
+    <script src="js/js/anim.min.js" type="text/javascript"></script>
+    <script src="js/js/trigger.min.js" type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="ripple-container" id="lds-ripple">
+        <div class="lds-ripple">
+            <div></div>
+            <div></div>
+            <br>
+            <p class="lead load-text">Loading...</p>
+        </div>
+        <section>
+            <div class="jumbotron jumbotron-fluid hero-section">
+                <div class="container section-content">
+                    <svg viewBox="0 0 1320 300">
+                        <text x="50%" y="50%" xy=".35em" text-anchor="middle">
+                            D
+                        </text>
+                    </svg>
+                    <h1 class="display-4 main-title">Welcome <br> to Delani studios</h1>
+                    <p class="lead">Amazing people are making amazing designs in a fun environment</p>
+                    <a href="#start">
+                        <div class="indicator">
+                            <p class="indicator-icon"></p>
+                        </div>
+                    </a>
+                </div>    
+            </div>
+         </div>
+        </section>
+        <section class="about-section" id="start">
+            <div class="section-overlay">
+                <div class="container-fluid sub-section-content sub-content">
+                    <h2 class="section-title sub-title">ABOUT US</h2>
+                    <P class="lead">When you work with us, you are a part of a team of committed
+                        collaborators. All aspects of our software development process
+                        are intergrated, interactive and agile. Our approach unifies design,
+                        development and product management to create exceptional products. We start
+                        each project by understanding your business goals, the user's needs
+                        and the product requirements. Then we help translate them into effective
+                        and elegant solutions.</P>
+                </div>
+            </div>
+        </section>
+        <section class="service-section">
+            <div class="container-fluid sub-section-content services">
+                <div class="overlay">
+                    <h2 class="section-title sub-title">SERVICES</h2>
+                    <P class="lead">Before we sign a contract or a write a line of a code our
+                        team will spend the necessary time needed to understand your product vision.
+                        The outcome of this scoping session is a proposal or high-level statement
+                        of work. Based on your requirements, we can provide a complete
+                        offering or just the process you need.</P>
+                </div>
+            </div>
+        </section>
+        <section class="design-section">
+            <div class="row">
+                <div class="container-fluid sub-section-content">
+                    <h2 class="section-title sub-title">WHAT WE DO</h2>
+                    <div class="row">
+
+                        <div class="card" style="width: 18rem;">
+                            <div id="col-md-4">
+                                <figure>
+                                    <img src="./images/assets/services_icons/design_icon.png" class="card-img-top service-icon"
+                                    alt="Service Icon">
+                                    <br>
+                                    <figcaption class="h4">DESIGN</figcaption>
+                                </figure>
+                                <Button class= "btn description-btn">Show Description</Button>
+                            </div>
+                            <div class="card-body" id="first-description" style="display: none;">
+                                <h5 class="card-title">DESIGN</h5>
+                                <p class="card-text">Our design practice offers a full range of services
+                                    including brand strategy, interaction and visual design and user experience testing.
+                                    Throughout your project, our designers create and implement visual design and workflow
+                                    to solicit user feedback and work with you to make sure what gets built is
+                                    what is needed.</p>
+                                    <button class="btn btn-danger">Hide Description</button>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <div id="col-md-4">
+                                <figure>
+                                    <img src="./images/assets/services_icons/dev_icon.png" class="card-img-top service-icon"
+                                    alt="Service Icon">
+                                    <br>
+                                    <figcaption class="h4">DEVELOPMENT</figcaption>
+                                </figure>
+                                <buton class="btn description-btn">Show Description</button>
+                            </div>
+
+                            <div class="card-body" id="second-description" style="display: none;">
+                                <h5 class="card-title">DEVELOPMENT</h5>
+                                <P class="card-text">All engineers are fluent in the latest enterprise,
+                                    mobile and web development technologies. They collaborate with your team
+                                    to write, and improve code on a daily basis,
+                                    using proven practices such as test-driven development and pair programming.</P>
+                                    <button class="btn btn-danger">Hide Description</button>
+    
+    
+                            </div>
+                        
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                         <div id="col-md-4">
+                             <figure>
+                                 <img src="./images/assets/services_icons/product_icon.png" class="card-img-top services_icon" alt="service-icon">
+                                 <br>
+                                 <figcaption class="h4">PRODUCT MANAGEMENT</figcaption>
+                             </figure>
+                             <button class="btn description-btn">Show Description</button>
+                         </div>
+                         <div class="card-body" id="third-description" style="display: none;">
+                          <h5 class="card-title">PROJECT MANAGEMENT</h5>
+                          <P class="card-text">Planning and development is iterative. Because we are
+                            constantly coding and testing, the products we build are always ready to go live.
+                            This iterative process allows for changes as business requirements evolve.</P>
+                            <button class="btn btn-danger">Hide Description</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section class="portfolio">
+            <div class="container sub-section-content">
+                <div class="row first-row">
+                    <div class="col-sm-3" id="first-img">
+                        <img src="./images/assets/portfolio/work1.jpg" class="img-fluid" alt="Responsive image">
+                        <div style="display: none;" id="fifth-portfolio-item" class="portfolio-item-overlay">
+                         <p class="lead project-name">Project 1</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3" id="second-img">
+                        <img src="./images/assets/portfolio/work2.jpg" class="img-fluid" alt="Responsive image">
+                        <div style="display: none;" id="sixth-portfolio-item" class="portfolio-item-overlay">
+                         <p class="lead project-name">Project 2</p>
+                        </div>
+                    </div>
+    
+                    <div class="col-sm-3" id="third-img">
+                        <img src="./images/assets/portfolio/work3.jpg" class="img-fluid" alt="Responsive image">
+                        <div style="display: none;" id="seventh-portfolio-item" class="portfolio-item-overlay">
+                         <p class="lead project-name">Project 3</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3" id="fourth-img">
+                        <img src="./images/assets/portfolio/work4.jpg" class="img-fluid" alt="Responsive image">
+                        <div style="display: none;" id="eigth-portfolio-item" class="portfolio-item-overlay">
+                         <p class="lead project-name">Project 4</p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+             <div class="row second-row">
+                <div class="col-sm-3" id="fifth-img">
+                    <img src="./images/assets/portfolio/work5.jpg" class="img-fluid" alt="Responsive image">
+                    <div style="display: none;" id="fifth-portfolio-item" class="portfolio-item-overlay">
+                     <p class="lead project-name">Project 5</p>
+                    </div>
+                </div>
+                <div class="col-sm-3" id="sixth-img">
+                    <img src="./images/assets/portfolio/work6.jpg" class="img-fluid" alt="Responsive image">
+                    <div style="display: none;" id="sixth-portfolio-item" class="portfolio-item-overlay">
+                     <p class="lead project-name">Project 6</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-3" id="seventh-img">
+                    <img src="./images/assets/portfolio/work7.jpg" class="img-fluid" alt="Responsive image">
+                    <div style="display: none;" id="seventh-portfolio-item" class="portfolio-item-overlay">
+                     <p class="lead project-name">Project 7</p>
+                    </div>
+                </div>
+                <div class="col-sm-3" id="eigth-img">
+                    <img src="./images/assets/portfolio/work8.jpg" class="img-fluid" alt="Responsive image">
+                    <div style="display: none;" id="eigth-portfolio-item" class="portfolio-item-overlay">
+                     <p class="lead project-name">Project 8</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="contact-section">
+            <div class="container-fluid sub-section-content contact">
+                <div class="contact-overlay">
+                    <h2 class="section-title sub-title">CONTACT US</h2>
+                    <form class="contact-form fdL validate" id="mc-embedded-subscribe-form"
+                    action="https://gmail.us7.list-manage.com/subscribe/post?u=bc3daf8fc492de254bc64ded8&amp;id=dacbfef685"
+                    name="mc-embedded-subscribe-form" method="post" target="_blank">
+                <div class="row">
+                    <div class="col">
+                        <input name="MMERGE3" type="text" id="mce-MMERGE3" class="form-control" placeholder="Name..." required>
+                    </div>
+                    <div class="col">
+                        <input name="EMAIL" type="email" id="mce-EMAIL" class="form-control" placeholder="Email..." required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea name="MMERGE1" class="form-control"id="mce-MMERGE1" rows="3" placeholder="your message here..." required></textarea>
+
+                </div>
+                <button type="button" class="btn submit-btn" id="validate">Validate</button>
+                <button style="display: none;" name="subscribe" type="submit" class="btn btn-danger submit btn" id="mc-embedded-subscribe">Submit</button>
+                </form>
+                <div style="display: none" id="resubmit">
+                 <p class="lead">Resubmit form</p>
+                </div>
+            </div>
+        </section>
+        <section class="social-section">
+            <div class="container-fluid sub-section-content">
+                <div class="social-icons-container">
+                    <img src="./images/assets/social_icons/twitter.png" alt="Social Icon" class="img-thumbnail social-icon">
+                    <img src="./images/assets/social_icons/dribble.png" alt="Social Icon" class="img-thumbnail social-icon">
+                    <img src="./images/assets/social_icons/facebook.png" alt="Social Icon" class="img-thumbnail social-icon">
+                    <img src="./images/assets/social_icons/g_plus.png" alt="Social Icon" class="img-thumbnail social-icon">
+                    <img src="./images/assets/social_icons/skype.png" alt="Social Icon" class="img-thumbnail social-icon">
+                    <img src="./images/assets/social_icons/stumble_upon.png" alt="Social Icon" class="img-thumbnail social-icon">
+                    <img src="./images/assets/social_icons/behance.png" alt="Social Icon" class="img-thumbnail social-icon">
+                    <img src="./images/assets/social_icons/pinterest.png" alt="Social Icon" class="img-thumbnail social-icon">
+                    <img src="./images/assets/social_icons/flickr.png" alt="Social Icon" class="img-thumbnail social-icon">
+                    <img src="./images/assets/social_icons/you_tube.png" alt="Social Icon" class="img-thumbnail social-icon">
+                </div><br>
+                <p class="h5">DELANI STUDIO<br>2020<br>Developed By:<a class="footer-link" href="https://github.com/cheruden" target="_blank">Dennis K cheruiyot</a></p>
+            </div>
+        </section>
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelby="exampleModalCenterTitle" arial-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Hey!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="lead"> Thank you <span id="sub-name"></span>, we have received your message. Thank you
+                            for reaching out to us.We will be in touch shortly.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <script src="js/anim.js" type="text/javascript"></script>
+    <script src="js/js/bootstrap.min.js" type="text/javascript"></script>
+    <script type='text/javascript' src='js/mc-validate.js'></script>
+    <script type='text/javascript'>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[3] = 'MMERGE3';
+    ftypes[3] = 'text'; fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'MMERGE1'; ftypes[1] = 'text';}(jQuery));
+    var $mcj = jQuery.noConflict(true);
+    </script>
     
 </body>
 </html>
