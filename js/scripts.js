@@ -24,17 +24,20 @@ function validate(e) {
     let resubmit = document.getElementById('resubmit');
     resubmit.addEventListener('click', reld, true);
 
+
     function submit(e) {
         e.preventDefault();
         document.getElementById('sub-name').innerText = nameValue;
         form.style.display = "none";
         resubmit.style.display = "block";
+        alert("Thank you, your details have been received. You can resubmit or continue based on your wish")
     };
     function reld() {
         location.reload();
     };
 
 };
+
 /* UI */
 let loader = document.getElementById('lds-ripple');
 window.addEventListener('load', preload, true);
@@ -70,7 +73,7 @@ $("#first-description").click(function () {
 $("#second-icon").click(function () {
     $("#second-icon").hide();
     $("#second-description").show();
-    $("#second-icon").removeClass("show");
+   $("#second-icon").removeClass("show");
     $("#second-description").addClass("show");
 });
 
@@ -82,7 +85,7 @@ $("#second-description").click(function () {
 });
 
 $("#third-icon").click(function () {
-    $("#third-icon").hide();
+   $("#third-icon").hide();
     $("#third-description").show();
     $("#third-icon").removeClass("show");
     $("#third-description").addClass("show");

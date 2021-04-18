@@ -1,7 +1,10 @@
-*{
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+h5{
+    font-size: 15px;
 }
 
 body {
@@ -14,20 +17,17 @@ img {
     max-width: 100%;
     object-fit: cover;
 }
-
-a,
-li {
-    text-decoration: none;
+.landing {
+    position: relative;
+    text-align: center;
+    color: #ffff;
+    font-size: 20px;
 }
-
-@font-face {
-    font-family: Musicals;
-    src: url("/webfonts/Musicals.ttf");
-}
-
-@font-face {
-    font-family: Jazz;
-    src: url("/webfonts/Jazz\ Music.ttf");
+.background{
+    background-image: url("/images/assets/backgrounds/h_img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20%
 }
 
 .hero-section {
@@ -68,114 +68,6 @@ html {
     }
 }
 
-.indicator {
-    color: rgb(255, 255, 255);
-    margin: 21% 0 0 0;
-    font-size: 7vw;
-    font-weight: 900;
-    height: 70px;
-    width: 50px;
-    border: 3px solid rgb(255, 255, 255);
-    border-radius: 45%;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-
-@media(min-width:768px) {
-    .indicator {
-        margin: 10% 0 0 0;
-        font-size: 3vw;
-        height: 90px;
-        width: 50px;
-    }
-}
-
-@media(width:768px) {
-    .indicator {
-        font-size: 5vw;
-    }
-}
-
-@media(width:800px) {
-    .indicator {
-        font-size: 5vw;
-    }
-}
-
-@media(width:1024px) {
-    .indicator {
-        font-size: 5vw;
-    }
-}
-
-
-.indicator-icon {
-    position: relative;
-    animation: indicate 1.2s linear infinite;
-    transition: 1.2s linear 0s;
-}
-
-
-svg {
-    position: relative;
-    margin: 0 0 5% 0;
-}
-
-svg text {
-    text-transform: uppercase;
-    animation: stroke 5s infinite alternate;
-    stroke-width: 2;
-    stroke: #ffffff;
-    font-size: 112vw;
-    font-family: "default";
-}
-
-
-@media(max-width:280px) {
-    svg text {
-        font-size: 180vw;
-    }
-}
-
-
-@media(width:640px) {
-    svg text {
-        font-size: 52vw;
-    }
-}
-
-@media(width:540px) {
-    svg text {
-        font-size: 72vw;
-    }
-}
-
-@media(min-width:768px) {
-    svg text {
-        font-size: 15vw;
-    }
-}
-
-@media(width:768px) {
-    svg text {
-        font-size: 32vw;
-    }
-}
-
-@media(width:800px) {
-    svg text {
-        font-size: 32vw;
-    }
-}
-
-@media(width:1024px) {
-    svg text {
-        font-size: 28vw;
-    }
-}
-
 .services {
     background-image: url("/images/assets/backgrounds/s_image.jpg");
     background-position: center;
@@ -199,12 +91,11 @@ svg text {
 }
 
 .about-section {
-    color: rgb(255, 136, 0);
+    color: rgb(15, 14, 12);
 }
 
 .section-overlay {
     position: relative;
-    background-color: rgb(255, 136, 0);
     ;
 }
 
