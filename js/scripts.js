@@ -30,7 +30,7 @@ function validate(e) {
         document.getElementById('sub-name').innerText = nameValue;
         form.style.display = "none";
         resubmit.style.display = "block";
-        alert("Thank you, your details have been received. You can resubmit or continue based on your wish")
+        alert("Thank you, your details have been received. feel free with us")
     };
     function reld() {
         location.reload();
