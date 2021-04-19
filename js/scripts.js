@@ -55,7 +55,6 @@ function fDL() {
     };
 };
 window.addEventListener('scroll', fDL);
-
 $("#first-icon").click(function () {
     $("#first-icon").hide();
     $("#first-description").show();
