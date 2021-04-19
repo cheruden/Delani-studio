@@ -73,8 +73,8 @@ html {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: rgb(255, 255, 255);
+   /* background-attachment: fixed;*/
+    color: rgb(241, 209, 209);
     height: 100vh;
 }
 
