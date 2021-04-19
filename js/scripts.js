@@ -55,80 +55,48 @@ function fDL() {
     };
 };
 window.addEventListener('scroll', fDL);
-$(document).ready(function () {
-    $("#hide1").hide();
-    $("#design-img").click(function () {
-        $("#design-img").toggle('1000').hide('1000');
-        $("#hide1").show("1000");
-    });
-    $("#hide1").click(function () {
-        $("#hide1").toggle('1500');
-        $("#design-img").toggle('1500');
-    });
 
-$("#hide2").hide();
-$("#dev-img").click(function () {
-    $("#dev-img").toggle('1000').hide('1000');
-    $("#hide2").show("1000");
+$("#first-icon").click(function () {
+    $("#first-icon").hide();
+    $("#first-description").show();
+    $("#first-icon").removeClass("show");
+    $("#first-description").addClass("show");
 });
-$("#hide2").click(function () {
-    $("#hide2").toggle('1500');
-    $("#dev-img").toggle('1500');
+
+$("#first-description").click(function () {
+    $("#first-icon").show();
+    $("#first-description").hide();
+    $("#first-icon").addClass("show");
+    $("#first-description").removeClass("show");
 });
-$("#hide3").hide();
-$("#pro-img").click(function () {
-    $("#pro-img").toggle('1000').hide('1000');
-    $("#hide3").show("1000");
+
+$("#second-icon").click(function () {
+    $("#second-icon").hide();
+    $("#second-description").show();
+   $("#second-icon").removeClass("show");
+    $("#second-description").addClass("show");
 });
-$("#hide3").click(function () {
-    $("#hide3").toggle('1500');
-    $("#pro-img").toggle('1500');
+
+$("#second-description").click(function () {
+    $("#second-icon").show();
+    $("#second-description").hide();
+    $("#second-icon").addClass("show");
+    $("#second-description").removeClass("show");
 });
+
+$("#third-icon").click(function () {
+   $("#third-icon").hide();
+    $("#third-description").show();
+    $("#third-icon").removeClass("show");
+    $("#third-description").addClass("show");
 });
-//$("#first-description").hide();
-//$("#design").click(function () {
-    //$("#design").toggle().hide();
-    //$("#first-description").show();
-    //$("#first-description").show();
-    //$("#first-icon").removeClass("show");
-    //$("#first-description").addClass("show");
-//});
 
-//$("#first-description").click(function () {
-    //$("#first-icon").show();
-    //$("#first-description").toggle();
-    //$("#design").toggle();
-   // $("#first-icon").addClass("show");
-    //$("#first-description").removeClass("show");
-//});
-
-//$("#second-icon").click(function () {
-    //$("#second-icon").hide();
-    //$("#second-description").show();
-   //$("#second-icon").removeClass("show");
-    //$("#second-description").addClass("show");
-//});
-
-//$("#second-description").click(function () {
-   // $("#second-icon").show();
-    //$("#second-description").hide();
-    //$("#second-icon").addClass("show");
-    //$("#second-description").removeClass("show");
-//});
-
-//$("#third-icon").click(function () {
- //  $("#third-icon").hide();
- //   $("#third-description").show();
-  //  $("#third-icon").removeClass("show");
-  //  $("#third-description").addClass("show");
-//});
-
-//$("#third-description").click(function () {
- //   $("#third-icon").show();
-  //  $("#third-description").hide();
-   // $("#third-icon").addClass("show");
-  //  $("#third-description").removeClass("show");
-//});
+$("#third-description").click(function () {
+    $("#third-icon").show();
+    $("#third-description").hide();
+    $("#third-icon").addClass("show");
+    $("#third-description").removeClass("show");
+});
 
 
 $("#first-img").mouseenter(function () {
