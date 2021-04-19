@@ -54,19 +54,22 @@ function fDL() {
         movedElement.classList.add('fdalt');
     };
 };
-window.addEventListener('scroll', fDL);
-$("#first-icon").click(function () {
-    $("#first-icon").hide();
+//window.addEventListener('scroll', fDL);
+$("#first-description").hide();
+$("#design").click(function () {
+    $("#design").toggle().hide();
     $("#first-description").show();
-    $("#first-icon").removeClass("show");
-    $("#first-description").addClass("show");
+    //$("#first-description").show();
+    //$("#first-icon").removeClass("show");
+    //$("#first-description").addClass("show");
 });
 
 $("#first-description").click(function () {
-    $("#first-icon").show();
-    $("#first-description").hide();
-    $("#first-icon").addClass("show");
-    $("#first-description").removeClass("show");
+    //$("#first-icon").show();
+    $("#first-description").toggle();
+    $("#design").toggle();
+   // $("#first-icon").addClass("show");
+    //$("#first-description").removeClass("show");
 });
 
 $("#second-icon").click(function () {
