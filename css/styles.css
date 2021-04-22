@@ -24,7 +24,7 @@ img {
     font-size: 20px;
 }
 .background{
-    background-image: url("/images/assets/backgrounds/h_img.jpg");
+    background-image: url("/h_img.jpg");
     background-repeat: no-repeat;
     background-position: center;
     padding: 20%
@@ -305,7 +305,12 @@ html {
     transition: .5s linear 0s;
 }
 
-.contact,
+
+
+.contact {
+    height: 100vh;
+    margin: 15% 0 0 0;
+}.contact,
 input,
 textarea {
     background-image: url("/images/assets/backgrounds/c_image.jpg");
@@ -314,11 +319,6 @@ textarea {
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: rgb(255, 255, 255) !important;
-}
-
-.contact {
-    height: 100vh;
-    margin: 15% 0 0 0;
 }
 
 .contact-form {
